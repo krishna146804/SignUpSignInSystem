@@ -31,7 +31,7 @@ authForm.addEventListener('submit', async (e) => {
     
     // IMPORTANT: Agar local chala rahe ho to http://127.0.0.1:5000 use karein
     // Agar Render par deploy ho gaya hai, to apna Render URL yahan daalein
-    //const BASE_URL = "http://127.0.0.1:5000"; 
+    const BASE_URL = "https://signupsigninsystem.onrender.com"; 
 
     const url = isLogin 
         ? `${BASE_URL}/crm/api/v1/auth/signin`
