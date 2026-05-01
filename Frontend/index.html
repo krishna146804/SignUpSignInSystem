@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginSystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            
+            <div class="header">
+                <h2 id="form-title">Login to Account</h2>
+                <p id="form-subtitle">Please enter your credentials to proceed.</p>
+            </div>
+            <form id="authForm">
+                <div id="signup-fields" class="hidden">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="name@company.com">
+                    </div>
+                    <div class="input-group">
+                        <label>User Type</label>
+                        <select id="userType">
+                            <option value="CUSTOMER">Customer</option>
+                            <option value="ENGINEER">Engineer</option>
+                            <option value="ADMIN">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>User ID</label>
+                    <input type="text" id="userId" required placeholder="Unique username">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
+
+                <button type="submit" id="submitBtn">Sign In</button>
+            </form>
+            <div class="footer-text">
+                <p id="toggle-msg">Don't have an account? <a href="#" id="toggle-link">Create one</a></p>
+            </div>
+            
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
